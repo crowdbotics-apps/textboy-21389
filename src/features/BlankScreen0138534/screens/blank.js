@@ -33,17 +33,24 @@ export class _Blank extends React.Component {
       style={styles.ImageBackground_1}
     >
       <Button
+        title="start"
+        color="#3366FF"
+        style={styles.Button_3}
+        onPress={() => this.props.navigation.navigate("BlankScreen1138535")}
+      />
+      <Button
         title="menu "
         color="#3366FF"
         style={styles.Button_7}
         onPress={() => alert("Pressed!")}
       />
-      <Image resizeMode="cover" style={styles.Image_5} />
-      <Button
-        title="start"
-        color="#3366FF"
-        style={styles.Button_3}
-        onPress={() => this.props.navigation.navigate("BlankScreen1138535")}
+      <Image
+        resizeMode="cover"
+        source={{
+          uri:
+            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/pixilart-drawing_t21tdsQ.png"
+        }}
+        style={styles.Image_10}
       />
     </ImageBackground>
   )
