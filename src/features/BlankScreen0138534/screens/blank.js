@@ -32,25 +32,26 @@ export class _Blank extends React.Component {
       }}
       style={styles.ImageBackground_1}
     >
+      <Text style={styles.Text_33}>text your best friends </Text>
       <Button
         title="start"
         color="#3366FF"
         style={styles.Button_3}
         onPress={() => this.props.navigation.navigate("BlankScreen1138535")}
       />
+      <Image
+        resizeMode="cover"
+        source={{
+          uri:
+            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/download_1.jpeg"
+        }}
+        style={styles.Image_10}
+      />
       <Button
         title="menu "
         color="#3366FF"
         style={styles.Button_7}
         onPress={() => alert("Pressed!")}
-      />
-      <Image
-        resizeMode="cover"
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/pixilart-drawing_t21tdsQ.png"
-        }}
-        style={styles.Image_10}
       />
     </ImageBackground>
   )
